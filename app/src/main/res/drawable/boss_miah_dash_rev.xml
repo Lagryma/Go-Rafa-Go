@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/boss_miah_runanim01_rev"
+        android:duration="100" />
+    <item android:drawable="@drawable/boss_miah_runanim02_rev"
+        android:duration="100" />
+</animation-list>

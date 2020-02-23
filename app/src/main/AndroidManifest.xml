@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.go_rafa_go_game">
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".PauseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppPopups" />
+        <activity
+            android:name=".LoadingBackActivity"
+            android:screenOrientation="landscape"
+            android:clearTaskOnLaunch="true"/>
+        <activity
+            android:name=".GameOverActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppPopups" />
+        <activity
+            android:name=".LevelOne"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:noHistory="true" />
+
+        <service
+            android:name=".BackgroundMusicService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".PreMainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LevelsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".popupActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppPopup" />
+    </application>
+
+</manifest>
